@@ -8,6 +8,21 @@
     "dev": "node src/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brunnossanttos/shield-validator"
+  },
+  "keywords": [
+    "brasil",
+    "validação",
+    "cpf",
+    "email",
+    "url"
+  ],
   "author": "Bruno Santos",
-  "license": "MIT"
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/brunnossanttos/shield-validator/issues"
+  },
+  "homepage": "https://github.com/brunnossanttos/shield-validator#readme"
 }
