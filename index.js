@@ -1,4 +1,4 @@
-function isStrongPassword(password) {
+export function isStrongPassword(password) {
   if (password.length < 8) {
     return 'Por favor coloque pelo menos 8 caracteres.';
   }
@@ -22,7 +22,7 @@ function isStrongPassword(password) {
   return true;
 }
 
-function isValidEmail(email) {
+export function isValidEmail(email) {
   
   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
@@ -30,14 +30,14 @@ function isValidEmail(email) {
   
 }
 
-function isValidURL(url) {
+export function isValidURL(url) {
 
   const parsedURL = new URL(url);
 
   return parsedURL.protocol === 'http:' || parsedURL.protocol === 'https:';
 }
 
-function isValidCPF(cpf) {
+export function isValidCPF(cpf) {
   cpf = cpf.replace(/\D/g, '');
 
   if (cpf.length !== 11) {
@@ -57,7 +57,7 @@ function isValidCPF(cpf) {
   return (digit1 === digits[9] && digit2 === digits[10]);
 }
 
-function isValidCNPJ(cnpj) {
+export function isValidCNPJ(cnpj) {
   const cleanCNPJ = cnpj.replace(/\D/g, '');
 
   if (cleanCNPJ.length !== 14) {
@@ -68,7 +68,7 @@ function isValidCNPJ(cnpj) {
   return cnpjRegex.test(cnpj);
 }
 
-function isValidRG(rg) {
+export function isValidRG(rg) {
   const cleanRG = rg.replace(/\D/g, '');
 
   if (cleanRG.length !== 9) {
@@ -79,7 +79,7 @@ function isValidRG(rg) {
   return rgRegex.test(rg);
 }
 
-function isValidPhoneNumber(phoneNumber) {
+export function isValidPhoneNumber(phoneNumber) {
   const cleanPhoneNumber = phoneNumber.replace(/\D/g, '');
   if (cleanPhoneNumber.length !== 10) {
     return false;
@@ -88,7 +88,7 @@ function isValidPhoneNumber(phoneNumber) {
   return phoneRegex.test(cleanPhoneNumber);
 }
 
-function isValidCellphoneNumber(cellphoneNumber) {
+export function isValidCellphoneNumber(cellphoneNumber) {
   const cleanCellphoneNumber = cellphoneNumber.replace(/\D/g, '');
   if (cleanCellphoneNumber.length !== 11) {
     return false;
@@ -97,7 +97,7 @@ function isValidCellphoneNumber(cellphoneNumber) {
   return cellphoneRegex.test(cleanCellphoneNumber);
 }
 
-function isValidCEP(cep) {
+export function isValidCEP(cep) {
   const cleanCEP = cep.replace(/\D/g, '');
 
   if (cleanCEP.length !== 8) {
@@ -108,7 +108,7 @@ function isValidCEP(cep) {
   return cepRegex.test(cleanCEP);
 }
 
-module.export = {
+export default {
   isStrongPassword,
   isValidEmail,
   isValidURL,

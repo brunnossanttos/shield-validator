@@ -7,7 +7,11 @@ npm i shield-validator
 ```
 
 ```js
-import { isValidEmail, isValidURL, isValidCPF } from "shield-validator";
+import {
+  isValidEmail,
+  isValidURL,
+  isValidCPF,
+} from "shield-validator/index.js";
 ```
 
 - isStrongPassword(value):

@@ -1,6 +1,6 @@
 {
   "name": "shield-validator",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "shield validator is a validation email/url/etc library",
   "main": "index.js",
   "scripts": {
