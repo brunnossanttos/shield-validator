@@ -8,10 +8,6 @@ npm i shield-validator
 
 ```js
 import { isValidEmail, isValidURL, isValidCPF } from "shield-validator";
-
-or;
-
-const { isValidEmail, isValidURL, isValidCPF } = require("shield-validator");
 ```
 
 - isValidEmail(value):
