@@ -1,4 +1,4 @@
-function isValidEmail(email) {
+export function isValidEmail(email) {
   
   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
@@ -6,14 +6,14 @@ function isValidEmail(email) {
   
 }
 
-function isValidURL(url) {
+export function isValidURL(url) {
 
   const parsedURL = new URL(url);
 
   return parsedURL.protocol === 'http:' || parsedURL.protocol === 'https:';
 }
 
-function isValidCPF(cpf) {
+export function isValidCPF(cpf) {
   cpf = cpf.replace(/\D/g, '');
 
   if (cpf.length !== 11) {
