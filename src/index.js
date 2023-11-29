@@ -33,7 +33,7 @@ function isValidCPF(cpf) {
   return (digit1 === digits[9] && digit2 === digits[10]);
 }
 
-export default {
+module.exports = {
   isValidEmail,
   isValidURL,
   isValidCPF
